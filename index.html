@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Yunosuke Arakawa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="#hero" class="logo">
+            <h3>YA.</h3>
+        </a>
+        <nav>
+            <button class="mobile_nav_toggle" aria-controls="primary_navigation overlay" aria-expanded="false"></button>
+            <div class="overlay" data-visible="false"></div>
+            <ul class="primary_navigation" data-visible="false">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="sun_bg"></div>
+            <img class="mountain_bg" src="images/grid_mountain.svg" alt="">
+            <img class="city_3" src="images/city_silhouette_3.svg" alt="">
+            <img class="city_2" src="images/city_silhouette_2.svg" alt="">
+            <div class="title_container">
+                <h3>My name is</h3>
+                <h1>Yunosuke Arakawa.</h1>
+                <h2>I'm a Web Developer</h2>
+            </div>
+            <img class="city_1" src="images/city_silhouette_1.svg" alt="">
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="hidden">About me</h2>
+                    <p>
+                        Hi. My name is Yunosuke and I'm a self taught web developer from Japan. I am 1 year into my web
+                        development journey. My interest in web development started at university taking an into to web
+                        development course. Since then I have used online courses and YouTube to teach myself how to
+                        program. I enjoy creating responsive visually appealing websites. My goal is to create immersive
+                        websites that engage and inspire users. I have worked with both frontend and backend
+                        technologies to create fullstack web applications. I am an adaptive learner excited to learn new
+                        things and overcome technical challenges. I'm open to job opportunities where I can contribute,
+                        learn and grow.<br>
+
+                        <br>
+                        Outside of programming I am into volleyball, watching animation and reading. Other wise I am
+                        learning and exploring new libraries and frameworks.
+                    </p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="portrait">
+                        <img src="./images/portrait.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects__container">
+                <div class="project p1" id="p1">
+                    <img src="./images/twitter_clone_icon.png" alt="">
+                    <div></div>
+                    <h3>Twitter Clone</h3>
+                </div>
+                <div class="project p2" id="p2">
+                    <img src="./images/auction_app_icon.png" alt="">
+                    <div></div>
+                    <h3>Auction App</h3>
+                </div>
+                <div class="project p3" id="p3">
+                    <img src="./images/anime_app_icon.png" alt="">
+                    <div></div>
+                    <h3>Anime App</h3>
+                </div>
+                <div class="project p4" id="p4">
+                    <img src="./images/stock_portfolio_icon.png" alt="">
+                    <div></div>
+                    <h3>Stock Portfolio App</h3>
+                </div>
+                <div class="project p5" id="p5">
+                    <img src="./images/email_icon.png" alt="">
+                    <div></div>
+                    <h3>Email App</h3>
+                </div>
+
+                <dialog class="modal" id="project_modal">
+                    <button class="modal_close_button close_button">
+                        <img class="close_modal_icon" src="./images/close_icon.svg" alt=""
+                            style="height: 2rem; width: 2rem;">
+                    </button>
+                    <div class="project_modal__content">
+                        <h3>Project Title</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam veritatis porro
+                            omnis voluptatem, voluptates iure fugiat. Quod voluptatibus consequatur natus sunt sed,
+                            autem, labore non placeat ex possimus laboriosam necessitatibus commodi, alias itaque
+                            dignissimos ut. Natus earum impedit voluptatibus vel blanditiis cupiditate tempora
+                            recusandae expedita dolor?
+
+                            Soluta rerum beatae cumque distinctio laborum sequi autem, nesciunt quasi qui. Fugit, et
+                            quibusdam, reiciendis quas praesentium eos adipisci aperiam a enim tempore ipsam sit
+                            repudiandae corporis suscipit commodi officia eum tempora. Quam dicta illum deserunt
+                            reiciendis tenetur eligendi saepe eos consectetur laboriosam cum est, numquam explicabo illo
+                            quae. Possimus, iure quis. In?
+                        </p>
+                        <strong>HTML CSS JavaScript</strong>
+                        <img src="./images/twitter_clone_screen1.png" alt="">
+                    </div>
+                    <div class="project_button__container">
+                        <button class="close_button">Close</button>
+                        <a href="" class="source_code__button"><button>Source Code</button></a>
+                    </div>
+
+                </dialog>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact_form__container">
+                <h2>Get in Touch</h2>
+                <p>Get in touch or shoot me an email directly on arakawayunosuke1@gmail.com.</p>
+                <form class="contact_form" action="https://formsubmit.co/arakawayunosuke1@gmail.com" method="POST">
+                    <input type="hidden" name="_next"
+                        value="https://https://yuno1234.github.io/yunosukearakawa.github.io/thanks.html">
+                    <div class="form_row">
+                        <input id="name_input" type="text" name="name" placeholder="Name" required>
+                        <input id="email_input" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form_row">
+                        <textarea type="text" name="message" id="message_input" cols="30" rows="10"
+                            placeholder="Message" required></textarea>
+                    </div>
+                    <button class="submit_btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
