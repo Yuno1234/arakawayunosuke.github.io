@@ -61,6 +61,20 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 0.5s;
+    filter: blur(5px);
+    transform: translateX(-30%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
+
+
 header {
     position: fixed;
     display: flex;
@@ -263,7 +277,7 @@ main {
 .portrait {
     height: 450px;
     width: 450px;
-    background-color: aqua;
+    background-color: none;
     transform: rotate(45deg) scale(0.7);
     overflow: hidden;
     display: flex;
@@ -385,29 +399,34 @@ main {
     color: white;
 }
 
-.p1 {
+.project:nth-child(1) {
     top: -15%;
     left: -30%;
+    transition-delay: 400ms;
 }
 
-.p2 {
+.project:nth-child(2) {
     top: -15%;
     left: 50%;
+    transition-delay: 40ms;
 }
 
-.p3 {
+.project:nth-child(3) {
     top: -15%;
     left: 130%;
+    transition-delay: 400ms;
 }
 
-.p4 {
+.project:nth-child(4) {
     top: 150%;
     left: 10%;
+    transition-delay: 400ms;
 }
 
-.p5 {
+.project:nth-child(5) {
     top: 150%;
     left: 90%;
+    transition-delay: 40ms;
 }
 
 #project_modal {
@@ -761,5 +780,11 @@ main {
 
     .submit_btn {
         padding: 0.7rem 4rem;
+    }
+}
+
+@media(prefers-reduce-motion) {
+    .hidden {
+        transition: none;
     }
 }
