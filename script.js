@@ -96,6 +96,7 @@ closeModal.forEach((btn) => {
 
 const main = document.getElementsByTagName('main')[0];
 const header = document.querySelector('header')
+const logo = document.querySelector('.logo svg')
 const headerLink = document.querySelectorAll('header a')
 const about = document.querySelector('.about')
 const projects = document.querySelector('.projects')
@@ -107,10 +108,12 @@ main.onscroll = function () {
     if (window.innerWidth > 480) {
         if ((scroll >= windowHeight - headerHalf && scroll < windowHeight + about.offsetHeight - headerHalf) ||
             (scroll >= windowHeight + about.offsetHeight + projects.offsetHeight - headerHalf)) {
+            logo.style.fill = 'white';
             headerLink.forEach((link) => {
                 link.style.color = 'white';
             });
         } else {
+            logo.style.fill = 'black';
             headerLink.forEach((link) => {
                 link.style.color = 'black';
             });

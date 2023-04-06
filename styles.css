@@ -81,6 +81,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+    height: 4rem;
     z-index: 1;
 }
 
@@ -97,6 +98,10 @@ header {
     animation-fill-mode: forwards;
     transform: translateX(-80%);
     opacity: 0;
+}
+
+.logo svg {
+    transition: 0.3s;
 }
 
 header li {
