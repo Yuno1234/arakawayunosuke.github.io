@@ -407,31 +407,26 @@ main {
 .project:nth-child(1) {
     top: -15%;
     left: -30%;
-    transition-delay: 400ms;
 }
 
 .project:nth-child(2) {
     top: -15%;
     left: 50%;
-    transition-delay: 40ms;
 }
 
 .project:nth-child(3) {
     top: -15%;
     left: 130%;
-    transition-delay: 400ms;
 }
 
 .project:nth-child(4) {
     top: 150%;
     left: 10%;
-    transition-delay: 400ms;
 }
 
 .project:nth-child(5) {
     top: 150%;
     left: 90%;
-    transition-delay: 40ms;
 }
 
 #project_modal {
@@ -654,8 +649,12 @@ main {
         transform: translate(-45%, -30%) rotate(90deg) scale(0.8);
     }
 
-    .project>img {
-        transform: rotate(-135deg) scale(0.5);
+    .project {
+        transform: rotate(-45deg);
+    }
+
+    .project:hover {
+        transform: rotate(-45deg) scale(1.1);
     }
 }
 

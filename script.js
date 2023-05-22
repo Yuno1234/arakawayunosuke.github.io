@@ -44,11 +44,11 @@ const projectContent = {
         repo: "https://github.com/Yuno1234/Anime-App"
     },
     p4: {
-        title: "Stock Portfolio App",
-        desc: 'A web application that enables you to manage portfolios of stocks. The application allows users to search, "buy" and "sell" stocks using the IEX API. Users can also check their history of transactions.<br><br>For this project I learned mostly about fetching the required data from the API, sending them to different routes and writing queries for SQLite. This project was the first project I combined the frontend, backend, and the database which gave me a broad understanding of web development and how other technologies fit in to the tech stack.',
-        tech: ["HTML", "CSS", "Flask", "API"],
-        image: ["./images/invest_screen1.png"],
-        repo: "https://github.com/Yuno1234/Stock_Portfolio"
+        title: "Pokedex App",
+        desc: 'The app displays information about Pokémons up to the ninth generation. The application allows users to search for Pokémon, view general information, evolution, capable moves of the selected Pokémon, and compare Pokémon. For this project, I solidified the basics of React, such as creating functional components, using props and state, and most commonly used events and Hooks. I also used popular libraries such as Redux Toolkit, axios, Tailwind CSS, React Router, and react-charts-2. During the process of building this project, I gained a deeper understanding of React and what React actually does when combined with other technologies.',
+        tech: ["ReactJS", "Redux Toolkit", "TailwindCSS", "API"],
+        image: ["./images/pokedex_app_screen1.png", "./images/pokedex_app_screen2.png", "./images/pokedex_app_screen3.png", "./images/pokedex_app_screen4.png", "./images/pokedex_app_screen5.png"],
+        repo: "https://github.com/Yuno1234/pekedex_app"
     },
     p5: {
         title: "Email App",
